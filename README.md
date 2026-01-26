@@ -16,7 +16,7 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 
 ## What's working
 - AMD CPU Power Management &rarr; install AMD Power Gadget to adjust CPU behavior
-- AMD Radeon Graphics 2GB (via NootedRed kext) &rarr; Make sure to increase VRAM to at least 2 GB in BIOS (Config > Display > UMA Frame buffer Size)
+- AMD Radeon Graphics 2GB (via NootedRed kext) 
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
 - HDMI-Port
 - USB Port Mapping
@@ -32,6 +32,12 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 - Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
 - Biometric: Goodix fingerprint
 - Biometric: Facial Recognition (Windows Hello) Software Device
+
+## BIOS Settings
+Change the following settings in order to be able to install/run macOS:
+
+- Config > Display > UMA Frame buffer Size: 2G
+- Security > Secure Boot > Secure Boot: Off
 
 ## macOS Install Notes
 - Disable NootedRed kext during macOS install
