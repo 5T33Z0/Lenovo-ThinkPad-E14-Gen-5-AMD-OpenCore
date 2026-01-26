@@ -22,9 +22,9 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 - HDMI
 
 ## What isn't working
-
-- **WiFi and BT**: MediaTek Wi-Fi 6E MT7922 &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
-- Fingerprint Sensor &rarr; incompatible with macOS
+- Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
+- Biometric: Goodix fingerprint
+- Biometric: Facial Recognition (Windows Hello) Software Device
 
 ## macOS Install Notes
 - Disable NootedRed kext during macOS install
