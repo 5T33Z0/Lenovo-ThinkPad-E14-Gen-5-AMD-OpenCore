@@ -14,12 +14,17 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 **RAM**: 16 GB (DDR4 SDRAM, PC4-25600, 3200 MHz)
 **Storage**: 1 TB NVME (Western Digital PC SN740)
 
-## Issues
+## What's working
 
-### Incompatible Components
+- AMD CPU Power Management &rarr; Use AMD Power Gadget to adjust CPU behavior)
+- AMD Radeon Graphics 2GB (via NootedRed kext) &rarr; Make sure to increase VRAM to at least 2 GB in BIOS (Config > Display > UMA Frame buffer Size)
+- Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
+- HDMI
+
+## What isn't working
+
 - **WiFi and BT**: MediaTek Wi-Fi 6E MT7922 &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
 - Fingerprint Sensor &rarr; incompatible with macOS
-- Audio?
 
 ## macOS Install Notes
 - Disable NootedRed kext during macOS install
@@ -38,7 +43,7 @@ sudo spctl --master-disable
 
 > [!IMPORTANT]
 >
-> In macOS Sequoia, disabling Gatekeeper requires you to confirm the changes in System Settings &rarr; Gatekeeper &rarr; select "Allow apps from 'Everywhere'"
+> In macOS Sequoia+, disabling Gatekeeper requires you to confirm the changes in System Settings &rarr; Gatekeeper &rarr; select "Allow apps from 'Everywhere'"
 
 ## Credits
 
