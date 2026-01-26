@@ -1,6 +1,6 @@
 # Lenovo ThinkPad E14 Gen 5 (AMD) Hackintosh OpenCore
 
-<img width="2856" height="2376" alt="E14_Sequoia" src="https://github.com/user-attachments/assets/179d135e-0bd4-4aed-b8a7-74771fa3d7b2" />
+![](https://github.com/user-attachments/assets/179d135e-0bd4-4aed-b8a7-74771fa3d7b2)
 
 ## About
 
@@ -23,6 +23,7 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 
 ### Notable Features
 - Correct CPU name displayes in "About this Mac…" section
+- [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) Icons by HJebbour
 
 ## What isn't working
 - Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
