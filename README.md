@@ -23,6 +23,7 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
 - HDMI-Port
 - USB Port Mapping
+- WiFi – Requires USB Dongle
 
 ### Notable Features
 - Correct CPU name displayed in "About this Mac…" section
