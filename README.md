@@ -19,7 +19,8 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 - AMD CPU Power Management &rarr; Use AMD Power Gadget to adjust CPU behavior)
 - AMD Radeon Graphics 2GB (via NootedRed kext) &rarr; Make sure to increase VRAM to at least 2 GB in BIOS (Config > Display > UMA Frame buffer Size)
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
-- HDMI
+- HDMI-Port
+- Correct CPU name displayes in "About this Mac…" section
 
 ## What isn't working
 - Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
