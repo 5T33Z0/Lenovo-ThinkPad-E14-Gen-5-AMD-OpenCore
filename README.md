@@ -1,6 +1,6 @@
 # Lenovo ThinkPad E14 Gen 5 (AMD) Hackintosh OpenCore
 
-![](/Users/5t33z0/Desktop/E14_Sequoia.png)
+<img width="2856" height="2376" alt="E14_Sequoia" src="https://github.com/user-attachments/assets/179d135e-0bd4-4aed-b8a7-74771fa3d7b2" />
 
 ## About
 
