@@ -15,7 +15,7 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 **Storage**: 1 TB NVME (Western Digital PC SN740)
 
 ## What's working
-- AMD CPU Power Management &rarr; Use AMD Power Gadget to adjust CPU behavior)
+- AMD CPU Power Management &rarr; install AMD Power Gadget to adjust CPU behavior
 - AMD Radeon Graphics 2GB (via NootedRed kext) &rarr; Make sure to increase VRAM to at least 2 GB in BIOS (Config > Display > UMA Frame buffer Size)
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
 - HDMI-Port
