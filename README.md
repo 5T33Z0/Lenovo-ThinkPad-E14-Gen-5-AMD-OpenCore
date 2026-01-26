@@ -2,6 +2,10 @@
 
 ![](https://github.com/user-attachments/assets/179d135e-0bd4-4aed-b8a7-74771fa3d7b2)
 
+[![OpenCore](https://img.shields.io/badge/OpenCore-v1.0.7-cyan.svg?style=flat-square&title=OpenCore%20Bootloader)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![macOS](https://img.shields.io/badge/macOS-15.7.x+-005BB5.svg?style=flat-square&title=Supported%20macOS%20Versions)](https://www.apple.com/macos/)
+[![Release](https://img.shields.io/badge/Download-Latest_Release-success.svg?style=flat-square&title=Latest%20Release)](https://github.com/5T33Z0/Lenovo-ThinkPad-E14-Gen-5-AMD-OpenCore/releases)
+
 ## About
 
 OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Early version, work in progress…
