@@ -21,12 +21,12 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 - HDMI-Port
 - USB Port Mapping
 
-### Todos
-- Volume Control with Keyboard Shortcuts
-
 ### Notable Features
 - Correct CPU name displayed in "About this Mac…" section
 - [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) Icons by HJebbour
+
+### Todos
+- Volume Control with Keyboard Shortcuts
 
 ## What isn't working
 - Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
