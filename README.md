@@ -11,12 +11,11 @@
 OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Early version, work in progress…
 
 ## Tech Specs
-
-**Model**: [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads)<br>
-**CPU**: AMD Ryzen 7 7730U (8 Cores/16 Threads)<br>
-**GPU**: AMD Radeon RX Vega 8 (4000/5000)<br>
-**RAM**: 16 GB (DDR4 SDRAM, PC4-25600, 3200 MHz)<br>
-**Storage**: 1 TB NVME (Western Digital PC SN740)
+- **Model**: [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads)
+- **CPU**: AMD Ryzen 7 7730U (8 Cores/16 Threads)
+- **GPU**: AMD Radeon RX Vega 8 (4000/5000)
+- **RAM**: 16 GB (DDR4 SDRAM, PC4-25600, 3200 MHz)
+- **Storage**: 1 TB NVME (Western Digital PC SN740)
 
 ## What's working
 - AMD CPU Power Management &rarr; install AMD Power Gadget to adjust CPU behavior
