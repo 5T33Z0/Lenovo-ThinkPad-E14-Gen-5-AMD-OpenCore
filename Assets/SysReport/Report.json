@@ -1,0 +1,541 @@
+{
+    "Motherboard": {
+        "Name": "LENOVO 21JR002WGE",
+        "Chipset": "AMD",
+        "Platform": "Laptop"
+    },
+    "BIOS": {
+        "Version": "R2CET46W(1.28)",
+        "Release Date": "2025-09-18",
+        "System Type": "x64-based",
+        "Firmware Type": "UEFI",
+        "Secure Boot": "Disabled"
+    },
+    "CPU": {
+        "Manufacturer": "AMD",
+        "Processor Name": "AMD Ryzen 7 7730U",
+        "Codename": "Barcelo-R",
+        "Core Count": "08",
+        "CPU Count": "01",
+        "SIMD Features": "SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, SSE4a, AVX, AVX2"
+    },
+    "GPU": {
+        "AMD Radeon (TM) Graphics": {
+            "Manufacturer": "AMD",
+            "Codename": "Barcelo",
+            "Device ID": "1002-15E7",
+            "Device Type": "Integrated GPU",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x0)",
+            "ACPI Path": "\\_SB.PCI0.GP17.VGA_",
+            "Resizable BAR": "Disabled"
+        }
+    },
+    "Monitor": {
+        "LEN403D": {
+            "Connector Type": "Internal",
+            "Resolution": "1920x1200",
+            "Connected GPU": "AMD Radeon (TM) Graphics"
+        }
+    },
+    "Network": {
+        "Realtek PCIe GbE Family Controller": {
+            "Bus Type": "PCI",
+            "Device ID": "10EC-8168",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x2)/Pci(0x0,0x0)",
+            "ACPI Path": "\\_SB.PCI0.GPP4.LAN_"
+        },
+        "MediaTek Wi-Fi 6 MT7921 Wireless LAN Card": {
+            "Bus Type": "PCI",
+            "Device ID": "14C3-7961",
+            "Subsystem ID": "E0BC17AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x3)/Pci(0x0,0x0)",
+            "ACPI Path": "\\_SB.PCI0.GPP5.PXSX"
+        }
+    },
+    "Sound": {
+        "Senary Audio": {
+            "Bus Type": "HDAUDIO",
+            "Device ID": "14F1-1F86",
+            "Subsystem ID": "17AA50D5",
+            "Audio Endpoints": [
+                "Lautsprecher"
+            ],
+            "Controller Device ID": "1022-15E3"
+        },
+        "AMD Audio Device": {
+            "Bus Type": "ACP",
+            "Device ID": "1022-15E2",
+            "Subsystem ID": "17AA50D5",
+            "Audio Endpoints": [
+                "Microphone Array"
+            ],
+            "Controller Device ID": "1022-15E2"
+        },
+        "AMD High Definition Audio Device": {
+            "Bus Type": "HDAUDIO",
+            "Device ID": "1002-AA01",
+            "Subsystem ID": "00AA0100",
+            "Controller Device ID": "1002-1637"
+        }
+    },
+    "USB Controllers": {
+        "AMD USB 3.10 eXtensible-Hostcontroller \u2013 1.10 (Microsoft)": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1639",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)",
+            "ACPI Path": "\\_SB.PCI0.GP17.XHC0"
+        },
+        "AMD USB 3.10 eXtensible-Hostcontroller \u2013 1.10 (Microsoft)_#1": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1639",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)",
+            "ACPI Path": "\\_SB.PCI0.GP17.XHC1"
+        }
+    },
+    "Input": {
+        "HID-konformes, vom Hersteller definiertes Ger\u00e4t": {
+            "Bus Type": "ACPI",
+            "Device": "ELAN06C7",
+            "Device Type": "I2C HID-Ger\u00e4t"
+        },
+        "PS/2-Standardtastatur": {
+            "Bus Type": "ACPI",
+            "Device": "LEN0071",
+            "Device Type": "PS/2"
+        },
+        "TrackPoint Device": {
+            "Bus Type": "ACPI",
+            "Device": "LEN030B",
+            "Device Type": "PS/2"
+        }
+    },
+    "Storage Controllers": {
+        "WD Black SN770 / PC SN740 256GB / PC SN560 (DRAM-less) NVMe SSD": {
+            "Bus Type": "PCI",
+            "Device ID": "15B7-5017",
+            "Subsystem ID": "501715B7",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x4)/Pci(0x0,0x0)",
+            "ACPI Path": "\\_SB.PCI0.GPP6.NVM2",
+            "Disk Drives": [
+                "WD PC SN740 SDDQNQD-1T00-1201"
+            ]
+        }
+    },
+    "Biometric": {
+        "Goodix fingerprint": {
+            "Bus Type": "USB",
+            "Device ID": "27C6-550A"
+        },
+        "Facial Recognition (Windows Hello) Software Device": {
+            "Bus Type": "ROOT",
+            "Device": "WINDOWSHELLOFACESOFTWAREDRIVER"
+        }
+    },
+    "Bluetooth": {
+        "MediaTek Bluetooth Adapter": {
+            "Bus Type": "USB",
+            "Device ID": "0489-E0CD"
+        }
+    },
+    "System Devices": {
+        "Hauptplatinenressourcen": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C02",
+            "ACPI Path": "\\_SB.PCI0.LPC0.SYSR"
+        },
+        "Eingebetteter, Microsoft ACPI-konformer Controller": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C09",
+            "ACPI Path": "\\_SB.PCI0.LPC0.EC0_"
+        },
+        "High Definition Audio-Controller": {
+            "Bus Type": "PCI",
+            "Device ID": "1002-1637",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)",
+            "ACPI Path": "\\_SB.PCI0.GP17.HDAU"
+        },
+        "PCI Express-Stammport": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1635",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)",
+            "ACPI Path": "\\_SB.PCI0.GP17"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166A",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x0)",
+            "ACPI Path": "\\_SB.PCI0.P180"
+        },
+        "Volume-Manager": {
+            "Bus Type": "ROOT",
+            "Device": "VOLMGR"
+        },
+        "Microsoft Hyper-V - Busanbieter f\u00fcr virtuelle Computer": {
+            "Bus Type": "ROOT",
+            "Device": "VMBUS"
+        },
+        "Microsoft Basic Display Driver": {
+            "Bus Type": "ROOT",
+            "Device": "BASICDISPLAY"
+        },
+        "High Definition Audio-Controller_#1": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-15E3",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)",
+            "ACPI Path": "\\_SB.PCI0.GP17.AZAL"
+        },
+        "ACPI-Thermozone": {
+            "Bus Type": "ACPI",
+            "Device": "THERMALZONE",
+            "ACPI Path": "\\_SB.THM0"
+        },
+        "ACPI-Energiezustandknopf": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C0E",
+            "ACPI Path": "\\_SB.SLPB"
+        },
+        "Microsoft-Hypervisor-Dienst": {
+            "Bus Type": "ROOT",
+            "Device": "HVSERVICE"
+        },
+        "AMD GPIO Controller": {
+            "Bus Type": "ACPI",
+            "Device": "AMDI0030",
+            "ACPI Path": "\\_SB.GPIO"
+        },
+        "Lenovo Smart Standby": {
+            "Bus Type": "ACPI",
+            "Device": "LEN0111",
+            "ACPI Path": "\\_SB.PCI0.LPC0.EC0_.LSSD"
+        },
+        "ACPI-Thermozone_#1": {
+            "Bus Type": "ACPI",
+            "Device": "THERMALZONE",
+            "ACPI Path": "\\_SB.TZ01"
+        },
+        "ACPI-Prozessorcontainerger\u00e4t": {
+            "Bus Type": "ACPI",
+            "Device": "ACPI0010",
+            "ACPI Path": "\\_SB.PLTF"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI1"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#1": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI2"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#2": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI3"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#3": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI4"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#4": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI5"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#5": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI6"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#1": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166F",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x5)",
+            "ACPI Path": "\\_SB.PCI0.P185"
+        },
+        "Microsoft Hyper-V-Virtualisierungsinfrastrukturtreiber": {
+            "Bus Type": "ROOT",
+            "Device": "VID"
+        },
+        "Busenumerator f\u00fcr Verbundger\u00e4te": {
+            "Bus Type": "ROOT",
+            "Device": "COMPOSITEBUS"
+        },
+        "Microsoft virtueller Datentr\u00e4gerenumerator": {
+            "Bus Type": "ROOT",
+            "Device": "VDRVROOT"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#2": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166C",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x2)",
+            "ACPI Path": "\\_SB.PCI0.P182"
+        },
+        "ACPI-Deckel": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C0D",
+            "ACPI Path": "\\_SB.LID_"
+        },
+        "Lenovo Fn and function keys": {
+            "Bus Type": "ACPI",
+            "Device": "LEN0130",
+            "ACPI Path": "\\_SB.PCI0.LPC0.EC0_.LHKF"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#3": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1632",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x1,0x0)",
+            "ACPI Path": "\\_SB.PCI0.P010"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#4": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1632",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x0)",
+            "ACPI Path": "\\_SB.PCI0.P020"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#5": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1632",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x0)",
+            "ACPI Path": "\\_SB.PCI0.P080"
+        },
+        "System CMOS/Echtzeituhr": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0B00",
+            "ACPI Path": "\\_SB.PCI0.LPC0.RTC_"
+        },
+        "Hauptplatine": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C01",
+            "ACPI Path": "\\_SB.PCI0.LPC0.MEM_"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#6": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1671",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x7)",
+            "ACPI Path": "\\_SB.PCI0.P187"
+        },
+        "Lenovo Intelligent Thermal Solution": {
+            "Bus Type": "ACPI",
+            "Device": "LEN0100",
+            "ACPI Path": "\\_SB.PCI0.LPC0.EC0_.ITSD"
+        },
+        "Programmierbarer Interruptcontroller": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0000",
+            "ACPI Path": "\\_SB.PCI0.LPC0.PIC_"
+        },
+        "PCI Express-Stammport_#1": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1634",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x2)",
+            "ACPI Path": "\\_SB.PCI0.GPP4"
+        },
+        "PCI Express-Stammport_#2": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1634",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x3)",
+            "ACPI Path": "\\_SB.PCI0.GPP5"
+        },
+        "PCI Express-Stammport_#3": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1634",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x2,0x4)",
+            "ACPI Path": "\\_SB.PCI0.GPP6"
+        },
+        "UMBus-Stamm-Busenumerator": {
+            "Bus Type": "ROOT",
+            "Device": "UMBUS"
+        },
+        "Lenovo PM Device": {
+            "Bus Type": "ACPI",
+            "Device": "LEN0268",
+            "ACPI Path": "\\_SB.PCI0.LPC0.EC0_.HKEY"
+        },
+        "CAD (Charging Arbitration Driver)": {
+            "Bus Type": "ROOT",
+            "Device": "CAD"
+        },
+        "PCI Standard-ISA-Br\u00fccke": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-790E",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x14,0x3)",
+            "ACPI Path": "\\_SB.PCI0.LPC0"
+        },
+        "Stammkomplex f\u00fcr PCI-Express": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0A08",
+            "ACPI Path": "\\_SB.PCI0"
+        },
+        "Microsoft Windows-Verwaltungsschnittstelle f\u00fcr ACPI_#6": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C14",
+            "ACPI Path": "\\_SB.WMI9"
+        },
+        "Microsoft Hyper-V-PCI-Server": {
+            "Bus Type": "ROOT",
+            "Device": "VPCIVSP"
+        },
+        "DMA-Controller": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0200",
+            "ACPI Path": "\\_SB.PCI0.LPC0.DMAC"
+        },
+        "ACPI-Einschaltknopf": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C0C",
+            "ACPI Path": "\\_SB.PWRB"
+        },
+        "Microsoft ACPI-konformes System": {
+            "Bus Type": "ACPI_HAL",
+            "Device": "PNP0C08"
+        },
+        "Microsoft Basic Render Driver": {
+            "Bus Type": "ROOT",
+            "Device": "BASICRENDER"
+        },
+        "Microsoft UEFI-konformes System": {
+            "Bus Type": "ACPI_HAL",
+            "Device": "UEFI"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#7": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166E",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x4)",
+            "ACPI Path": "\\_SB.PCI0.P184"
+        },
+        "AMD SMBus": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-790B",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x14,0x0)",
+            "ACPI Path": "\\_SB.PCI0.SMB_"
+        },
+        "ACPI-Schalter": {
+            "Bus Type": "ACPI",
+            "Device": "FIXEDBUTTON"
+        },
+        "AMD Micro PEP Device": {
+            "Bus Type": "ACPI",
+            "Device": "AMDI0005",
+            "ACPI Path": "\\_SB.PEP_"
+        },
+        "Hauptplatinenressourcen_#1": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C02",
+            "ACPI Path": "\\_SB.AWR0"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#8": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166B",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x1)",
+            "ACPI Path": "\\_SB.PCI0.P181"
+        },
+        "AMD Audio CoProcessor": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-15E2",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x5)",
+            "ACPI Path": "\\_SB.PCI0.GP17.ACP_"
+        },
+        "Microsoft Hyper-V-Server f\u00fcr virtuelle Datentr\u00e4ger": {
+            "Bus Type": "ROOT",
+            "Device": "STORVSP"
+        },
+        "Numerischer Coprozessor": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C04",
+            "ACPI Path": "\\_SB.PCI0.LPC0.MATH"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#9": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1670",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x6)",
+            "ACPI Path": "\\_SB.PCI0.P186"
+        },
+        "AMD Crash Defender": {
+            "Bus Type": "ROOT",
+            "Device": "AMDLOG"
+        },
+        "Enumerator f\u00fcr virtuelle NDIS-Netzwerkadapter": {
+            "Bus Type": "ROOT",
+            "Device": "NDISVIRTUALBUS"
+        },
+        "AMD I2C Controller": {
+            "Bus Type": "ACPI",
+            "Device": "AMDI0010",
+            "ACPI Path": "\\_SB.I2CA"
+        },
+        "AMD I2C Controller_#1": {
+            "Bus Type": "ACPI",
+            "Device": "AMDI0010",
+            "ACPI Path": "\\_SB.I2CB"
+        },
+        "Lenovo Power and Battery": {
+            "Bus Type": "SWD",
+            "Device": "DRIVERENUM"
+        },
+        "Systemlautsprecher": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0800",
+            "ACPI Path": "\\_SB.PCI0.LPC0.SPKR"
+        },
+        "Microsoft-Systemverwaltungs-BIOS-Treiber": {
+            "Bus Type": "ROOT",
+            "Device": "MSSMBIOS"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#10": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-1630",
+            "Subsystem ID": "50D517AA",
+            "PCI Path": "PciRoot(0x0)/Pci(0x0,0x0)"
+        },
+        "PnP-Softwareger\u00e4te-Enumerator": {
+            "Bus Type": "ROOT",
+            "Device": "SYSTEM"
+        },
+        "Hauptplatinenressourcen_#2": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0C02",
+            "ACPI Path": "\\_SB.PCI0.MEMR"
+        },
+        "Redirector-Bus f\u00fcr Remotedesktop-Ger\u00e4t": {
+            "Bus Type": "ROOT",
+            "Device": "RDPBUS"
+        },
+        "PCI Standard-Host-CPU-Br\u00fccke_#11": {
+            "Bus Type": "PCI",
+            "Device ID": "1022-166D",
+            "Subsystem ID": "00000000",
+            "PCI Path": "PciRoot(0x0)/Pci(0x18,0x3)",
+            "ACPI Path": "\\_SB.PCI0.P183"
+        },
+        "Systemzeitgeber": {
+            "Bus Type": "ACPI",
+            "Device": "PNP0100",
+            "ACPI Path": "\\_SB.PCI0.LPC0.TIME"
+        }
+    }
+}
