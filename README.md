@@ -32,7 +32,7 @@ OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14
 ## Post-Install Notes
 
 ### Install AMD Power Gadget
-Install [**AMD Power Gadget**](https://github.com/trulyspinach/SMCAMDProcessor/releases) once macOS is up and running to monitor CPU Power Management
+Install [**AMD Power Gadget**](https://github.com/trulyspinach/SMCAMDProcessor/releases) once macOS is up and running to monitor and adjust CPU Power Management
 
 ### Disable GateKeper (optional)
 Only required if you want to use a WiFi USB Dongle and need to use Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
