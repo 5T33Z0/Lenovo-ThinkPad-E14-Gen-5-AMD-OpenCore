@@ -8,7 +8,7 @@
 
 ## About
 
-OpenCore EFI for running macOS Sequoia (and potentially Tahoe) on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Early version, work in progress…
+OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Trying to get Tahoe to work as well. Early version, work in progress…
 
 ## Tech Specs
 - **Model**: [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads)
