@@ -23,6 +23,7 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
 - HDMI-Port
 - USB Port Mapping
+- Brightness and Volume controls via keyboard shortcuts
 
 ### Notable Features
 - Correct CPU name displayed in "About this Mac…" section
