@@ -64,4 +64,4 @@ sudo spctl --master-disable
 
 ## Credits
 
-Based on EFI by [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh) who also has an E14 Gen 5 but with a different CPU (6 Cores instead of 8)
+Based on EFI by [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh) who also has an E14 Gen 5 but with a different CPU (6 Cores instead of 8) but improved.
