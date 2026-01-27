@@ -34,6 +34,7 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 
 ## Todos
 - Volume Control with Keyboard Shortcuts. Could be a PITA since the tool used to track PS/2 Keyboard Scan Codes ([ioio](https://github.com/RehabMan/OS-X-ioio)) does not work since macOS Big Sur
+- Enabling proper Sleep/Hibernation
 
 ## BIOS Settings
 Change the following settings in order to be able to install/run macOS:
