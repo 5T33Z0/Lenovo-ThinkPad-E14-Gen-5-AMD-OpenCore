@@ -1,6 +1,6 @@
 # Lenovo ThinkPad E14 Gen 5 (AMD) Hackintosh OpenCore
 
-![](https://github.com/user-attachments/assets/179d135e-0bd4-4aed-b8a7-74771fa3d7b2)
+![](https://github.com/user-attachments/assets/36f1e6be-984b-46c6-82c5-3dbf9d0dba1b)
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v1.0.7-cyan.svg?style=flat-square&title=OpenCore%20Bootloader)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS](https://img.shields.io/badge/macOS-15.7.x+-005BB5.svg?style=flat-square&title=Supported%20macOS%20Versions)](https://www.apple.com/macos/)
