@@ -23,19 +23,17 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 - Audio (aclid=21 in boot-args). For some reason, injecting the alcid via DeviceProperties doesn't work
 - HDMI-Port
 - USB Port Mapping
-- WiFi – Requires USB Dongle
 
 ### Notable Features
 - Correct CPU name displayed in "About this Mac…" section
 - [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) Icons by HJebbour
 
-### Todos
-- Volume Control with Keyboard Shortcuts
+## What's not working
+- WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
+- Biometrics: Goodix fingerprint and Facial Recognition (Windows Hello) Software Device
 
-## What isn't working
-- Networking and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
-- Biometric: Goodix fingerprint
-- Biometric: Facial Recognition (Windows Hello) Software Device
+## Todos
+- Volume Control with Keyboard Shortcuts. Could be a PITA since the tool used to track PS/2 Keyboard Scan Codes ([ioio](https://github.com/RehabMan/OS-X-ioio)) does not work since macOS Big Sur
 
 ## BIOS Settings
 Change the following settings in order to be able to install/run macOS:
