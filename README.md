@@ -61,7 +61,8 @@ sudo spctl --master-disable
 ### macOS Tahoe
 
 - Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
-- Setting in OCLP:<br><img width="712" height="812" alt="OCLPMOD" src="https://github.com/user-attachments/assets/8b92586a-ca54-4eb4-8694-40ac2bc0f2e7" />
+- Setting in OCLP:<br><img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
+
 
 ## Credits
 
