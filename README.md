@@ -8,7 +8,7 @@
 
 ## About
 
-OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Trying to get Tahoe to work as well. Early version, work in progress…
+OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Tested with macOS Sequoia and Tahoe.
 
 ## Tech Specs
 - **Model**: [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads)
@@ -42,9 +42,6 @@ Change the following settings in order to be able to install/run macOS:
 - Config > Display > UMA Frame buffer Size: 2G
 - Security > Secure Boot > Secure Boot: Off
 
-## macOS Install Notes
-- Disable NootedRed kext during macOS install
-
 ## Post-Install Notes
 
 ### Install AMD Power Gadget
@@ -60,6 +57,11 @@ sudo spctl --master-disable
 > [!IMPORTANT]
 >
 > In macOS Sequoia+, disabling Gatekeeper requires you to confirm the changes in System Settings &rarr; Gatekeeper &rarr; select "Allow apps from 'Everywhere'"
+
+### macOS Tahoe
+
+- Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
+- Setting in OCLP:<br><img width="712" height="812" alt="OCLPMOD" src="https://github.com/user-attachments/assets/8b92586a-ca54-4eb4-8694-40ac2bc0f2e7" />
 
 ## Credits
 
