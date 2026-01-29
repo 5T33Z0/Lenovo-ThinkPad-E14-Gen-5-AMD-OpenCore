@@ -44,6 +44,10 @@ Change the following settings in order to be able to install/run macOS:
 
 ## Post-Install Notes
 
+### macOS Tahoe
+- Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
+- Settings:<br><img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
+
 ### Install AMD Power Gadget
 Install [**AMD Power Gadget**](https://github.com/trulyspinach/SMCAMDProcessor/releases) once macOS is up and running to monitor and adjust CPU Power Management
 
@@ -58,13 +62,9 @@ sudo spctl --master-disable
 >
 > In macOS Sequoia+, disabling Gatekeeper requires you to confirm the changes in System Settings &rarr; Gatekeeper &rarr; select "Allow apps from 'Everywhere'"
 
-### macOS Tahoe
-
-- Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
-- Setting in OCLP:<br><img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
-
-
-## Credits
+## Credits and Thank Yous
 
 - Based on [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh); EFI cleaned up and updated with current kexts, icons, and settings. Added macOS Tahoe support.
 - AMD-OSX for [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla) – Binary kernel patches to enable AMD CPU support on macOS
+- ChefKissInc for NootedRed
+- Fabiosun for helpful clues
