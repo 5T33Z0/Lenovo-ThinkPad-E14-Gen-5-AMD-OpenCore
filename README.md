@@ -65,5 +65,5 @@ sudo spctl --master-disable
 
 ## Credits
 
-- Based on [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh); EFI cleaned up and updated with current kexts, icons, and settings.
+- Based on [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh); EFI cleaned up and updated with current kexts, icons, and settings. Added macOS Tahoe support.
 - AMD-OSX for [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla) – Binary kernel patches to enable AMD CPU support on macOS
