@@ -50,7 +50,7 @@ Change the following settings to install/run macOS:
 * Config > Display > UMA Frame buffer Size: 2G
 * Security > Secure Boot > Off
 
-## Config Adjustments
+### Config Adjustments
 
 Before installing macOS, prepare your OpenCore EFI and configure it:
 
