@@ -30,29 +30,39 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 - [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) Icons by HJebbour
 
 ## What's not working
-- WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
-- Biometrics: Goodix fingerprint and Facial Recognition (Windows Hello) Software Device
+- WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 Wireless LAN Card &rarr; Incompatible. Alternative: I use a USB WiFi Dongle ([**TL-WN725N**](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) and run it with Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
+- Biometrics: Goodix fingerprint sensor and Facial Recognition Software Device (Windows Hello)
 
 ## Todos
 - Enabling proper Sleep/Hibernation
 
-## BIOS Settings
+---
+
+## Preparations
+
+### BIOS Settings
 Change the following settings in order to be able to install/run macOS:
 
 - Config > Display > UMA Frame buffer Size: 2G
 - Security > Secure Boot > Secure Boot: Off
 
+### Config adjustments
+
+- Download my EFI folder from the Releases section
+- Uznip it
+- Open the `config.plist` with [OCAT](https://github.com/ic005k/OCAuxiliaryTools) or your prefered plist editor
+- Adjust the following Settings:
+  - `Kernel/Add`: If you don't use a Realtek-based USB WiFi-Dongle like mine, disable the 2 `RtlWlanU` kexts
+  - `Kernel/Patch`: If your ThinkPad E14 Gen 5 uses a different AMD CPU, adjust the Core Count (refer to [AMD-Vanilla Guide](https://github.com/AMD-OSX/AMD_Vanilla?tab=readme-ov-file#note-for-zen-4))
+  -  `PlatformInfo/Generic`: Generate Serial, ROM, MLB etc.
+- Safe the config.plist
+- Put the EFI folder on the root of a FAT32 formatted USB Flash driver. You can boot OpenCore from it.
+- For creating a macOS USB Installer, follow the Instruction on Dortania's [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer)
+
 ## Post-Install Notes
 
-### macOS Tahoe
-- Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
-- Settings:<br><img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
-
-### Install AMD Power Gadget
-Install [**AMD Power Gadget**](https://github.com/trulyspinach/SMCAMDProcessor/releases) once macOS is up and running to monitor and adjust CPU Power Management
-
-### Disable GateKeper (optional)
-Only required if you want to use a WiFi USB Dongle and need to use Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) 
+### Disable GateKeper (optional but recommended)
+Required for applying root patches and if you want to use a WiFi USB Dongle and need to use Chris1111’s Tool [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)
 
 ```shell
 sudo spctl --master-disable
@@ -61,6 +71,13 @@ sudo spctl --master-disable
 > [!IMPORTANT]
 >
 > In macOS Sequoia+, disabling Gatekeeper requires you to confirm the changes in System Settings &rarr; Gatekeeper &rarr; select "Allow apps from 'Everywhere'"
+
+### macOS Tahoe
+- Apply Root Patches with OCLP Mod in Post-Install to enable audio and USB WiFi Dongle
+- Settings:<br><img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
+
+### Install AMD Power Gadget
+Install [**AMD Power Gadget**](https://github.com/trulyspinach/SMCAMDProcessor/releases) once macOS is up and running to monitor and adjust CPU Power Management
 
 ## Credits and Thank Yous
 
