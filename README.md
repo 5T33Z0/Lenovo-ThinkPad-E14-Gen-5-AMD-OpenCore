@@ -57,11 +57,16 @@ Before installing macOS, prepare your OpenCore EFI and configure it:
 * Download the EFI folder from the Releases section
 * **Unzip** it
 * Open `config.plist` with [OCAT](https://github.com/ic005k/OCAuxiliaryTools) or your **preferred** plist editor
-* Adjust the following:
+* **Adjust the following**:
   * `Kernel/Add`: If you don’t use a Realtek USB WiFi dongle, disable the two `RtlWlanU` kexts
   * `Kernel/Patch`: If your CPU is different, adjust the Core Count (see [AMD-Vanilla Guide](https://github.com/AMD-OSX/AMD_Vanilla?tab=readme-ov-file#note-for-zen-4))
   * `PlatformInfo/Generic`: Generate Serial, ROM, MLB, etc.
 * **Save** the `config.plist`
+
+> [!IMPORTANT]
+>
+> When performing a first-time macOS installation or a clean/fresh install, make sure **NootedRed.kext** is disabled. If it remains enabled, the installer will hang at a later stage — specifically when the Setup Assistant appears to create a user account and complete initial configuration.
+
 
 ## macOS Installation
 
