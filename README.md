@@ -100,6 +100,9 @@ sudo spctl --master-disable
 
 Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to monitor and adjust CPU power management
 
+## Links
+[Lenovo Driver and Software Matrix](https://download.lenovo.com/cdrt/tools/drivermatrix/dm_2.html)
+
 ## Credits
 
 * Based on [op2025-ra](https://github.com/op2025-ra/ThinkPad-E14-Gen-5-Hackintosh); EFI cleaned and updated for current kexts, icons, and settings, plus macOS Tahoe support
