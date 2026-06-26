@@ -37,7 +37,7 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 
 > [!NOTE]
 > 
-> When running macOS Tahoe, analog audio does not work out of the box. In this case, install VoodooHDA-Tahoe or apply root patches with [OCLP Mod](https://github.com/laobamac/OCLP-Mod/releases).
+> When running macOS Tahoe, analog audio does not work out of the box. In this case, install [VoodooHDA-Tahoe](https://github.com/5T33Z0/Lenovo-ThinkPad-E14-Gen-5-AMD-OpenCore/raw/refs/heads/main/Assets/pkg/VoodooHDA-Tahoe.pkg) or apply root patches with [OCLP Mod](https://github.com/laobamac/OCLP-Mod/releases) in Post-Install.
 
 ### Notable Features
 
