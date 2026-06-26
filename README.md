@@ -2,7 +2,7 @@
 
 ![](https://github.com/user-attachments/assets/36f1e6be-984b-46c6-82c5-3dbf9d0dba1b)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v1.0.7-cyan.svg?style=flat-square\&title=OpenCore%20Bootloader)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v1.0.8-cyan.svg?style=flat-square\&title=OpenCore%20Bootloader)](https://github.com/acidanthera/OpenCorePkg/releases/latest)
 [![macOS](https://img.shields.io/badge/macOS-15.7.x+-005BB5.svg?style=flat-square\&title=Supported%20macOS%20Versions)](https://www.apple.com/macos/)
 [![Release](https://img.shields.io/badge/Download-Latest_Release-success.svg?style=flat-square\&title=Latest%20Release)](https://github.com/5T33Z0/Lenovo-ThinkPad-E14-Gen-5-AMD-OpenCore/releases)
 
@@ -12,20 +12,32 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 
 ## Tech Specs
 
-* **Model:** [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads)
-* **CPU:** AMD Ryzen 7 [7730U](https://www.amd.com/de/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html) (8 Cores / 16 Threads)
-* **iGPU:** AMD Radeon RX Vega 8 (4000/5000)
-* **RAM:** 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
-* **Storage:** 1 TB NVMe (Western Digital PC SN740)
+| Component   | Details | 
+------------- |---------------------------------------------
+| **Variant**   | [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads) |
+| **CPU**     | AMD Ryzen 7 [7730U](https://www.amd.com/de/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html) (8 Cores/16 Threads) 
+| **iGPU**    | AMD Radeon RX Vega 8 (4000/5000)
+| **RAM**     | 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
+| **Storage** | 1 TB NVMe (Western Digital PC SN740)
+| **WIFI/BT** | Intel® Wi-Fi 6E [AX210](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*
+
+> [!NOTE]
+> 
+> *In stock configuration, this laptop variant comes with a MediaTek Wi-Fi 6 MT7921 which is incompatible. So if you need Wi-Fi and Bluetiooth, upgrade your WiFi card.
 
 ## What's Working
 
-* AMD CPU Power Management → install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to adjust CPU behavior
-* AMD Radeon Graphics 2GB (via NootedRed kext)
-* Audio (use `alcid=21` in boot-args; DeviceProperties injection doesn’t work)
-* HDMI Port
-* USB Port Mapping
-* Brightness and Volume controls via keyboard shortcuts
+* [x] AMD CPU Power Management → install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to adjust CPU behavior
+* [x] AMD Radeon Graphics 2GB (via NootedRed kext)
+* [x] Audio*
+* [x] HDMI Port
+* [x] USB Port Mapping
+* [x] Brightness and Volume controls via keyboard shortcuts
+* [x] WiFi (via after-market WiFi/BT Card)
+
+> [!NOTE]
+> 
+> When running macOS Tahoe, analog audio does not work out of the box. In this case, install VoodooHDA-Tahoe or apply root patches with [OCLP Mod](https://github.com/laobamac/OCLP-Mod/releases).
 
 ### Notable Features
 
@@ -34,12 +46,13 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 
 ## What's Not Working
 
-* WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 → incompatible. Alternative: USB WiFi Dongle ([TL-WN725N](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) with Chris1111’s [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)
-* Biometrics: Goodix fingerprint sensor and Windows Hello facial recognition
+* [ ] Stock WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 → incompatible. Alternative: USB WiFi Dongle ([TL-WN725N](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) with Chris1111’s [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) or ugrade the internal WiFi/BT Card
+* [ ] Biometrics: Goodix fingerprint sensor and Windows Hello facial recognition
 
 ## Todos
 
-* Enable proper Sleep/Hibernation
+- [ ] Enable proper Sleep/Hibernation
+- [ ] Slim Wifi and BT kext to reduce overall EFI size
 
 ## Preparations
 
@@ -58,15 +71,14 @@ Before installing macOS, prepare your OpenCore EFI and configure it:
 * **Unzip** it
 * Open `config.plist` with [OCAT](https://github.com/ic005k/OCAuxiliaryTools) or your **preferred** plist editor
 * **Adjust the following**:
-  * `Kernel/Add`: If you don’t use a Realtek USB WiFi dongle, disable the two `RtlWlanU` kexts
-  * `Kernel/Patch`: If your CPU is different, adjust the Core Count (see [AMD-Vanilla Guide](https://github.com/AMD-OSX/AMD_Vanilla?tab=readme-ov-file#note-for-zen-4))
+  * `Kernel/Add`: If your System doesn’t use an Intel WiFi card, disable the Wifi and Bluetooth kexts, namely: itlwm, IntelBTPatcher, IntelBluetoothFirmware, BlueToolFixup
+  * `Kernel/Patch`: If your E14 uses a difffernet CPU, adjust the Core Count (see [AMD-Vanilla Guide](https://github.com/AMD-OSX/AMD_Vanilla?tab=readme-ov-file#note-for-zen-4))
   * `PlatformInfo/Generic`: Generate Serial, ROM, MLB, etc.
 * **Save** the `config.plist`
 
 > [!IMPORTANT]
 >
 > When performing a first-time macOS installation or a clean/fresh install, make sure **NootedRed.kext** is disabled. If it remains enabled, the installer will hang at a later stage — specifically when the Setup Assistant appears to create a user account and complete initial configuration.
-
 
 ## macOS Installation
 
@@ -77,7 +89,7 @@ Once your EFI is ready:
 
 ## Post-Install Notes
 
-### Disable Gatekeeper (optional but recommended)
+### Disable Gatekeeper
 
 Required for root patches and to run Chris1111’s WiFi USB tool:
 
@@ -89,14 +101,7 @@ sudo spctl --master-disable
 >
 > In macOS Sequoia+, confirm changes in System Settings → Gatekeeper → “Allow apps from Everywhere”
 
-### macOS Tahoe
-
-* Apply root patches with OCLP Mod to enable audio and USB WiFi dongle
-* Settings screenshot:
-
-  <img width="612" height="462" alt="oclp-mod" src="https://github.com/user-attachments/assets/07eb09dd-dda9-4815-bc97-7c0eac35edd5" />
-
-### AMD Power Gadget
+### Install AMD Power Gadget
 
 Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to monitor and adjust CPU power management
 
