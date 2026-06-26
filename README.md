@@ -101,6 +101,10 @@ sudo spctl --master-disable
 >
 > In macOS Sequoia+, confirm changes in System Settings → Gatekeeper → “Allow apps from Everywhere”
 
+### Install HeliPort App (Intel Wi-Fi only)
+
+Download, install and run [Heliport App](https://github.com/joshcalvert47/HeliPort) to be able to connect to Wi-Fi Access Points.
+
 ### Install AMD Power Gadget
 
 Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to monitor and adjust CPU power management
@@ -114,3 +118,4 @@ Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/relea
 * [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla) – binary kernel patches for AMD CPUs
 * ChefKissInc for NootedRed
 * Fabiosun for helpful guidance
+* Chris1111 fpr VoodooHDA-Tahoe
