@@ -8,7 +8,7 @@
 
 ## About
 
-OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Tested with macOS Sequoia and Tahoe.
+OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Tested with macOS Sequoia and Tahoe.
 
 ## Tech Specs
 
@@ -19,11 +19,11 @@ OpenCore EFI for running macOS Sequoia on the Lenovo E14 Gen 5 with an AMD Ryzen
 | **iGPU**    | AMD Radeon RX Vega 8 (4000/5000)
 | **RAM**     | 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
 | **Storage** | 1 TB NVMe (Western Digital PC SN740)
-| **WIFI/BT** | Intel® Wi-Fi 6E [AX210](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*
+| **WIFI/BT** | Intel® Wi-Fi 6E [AX210](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*<br> **WiFi Fw**: `iwlwifi-ty-a0-gf-a0-68.ucode` + `iwlwifi-ty-a0-gf-a0.pnvm` <br> **BT Fw**: `ibt-0041-0041.sfi` + `ibt-0041-0041.ddc`
 
 > [!NOTE]
 > 
-> *In stock configuration, this laptop variant comes with a MediaTek Wi-Fi 6 MT7921 which is incompatible. So if you need Wi-Fi and Bluetiooth, upgrade your WiFi card.
+> *In stock configuration, this laptop variant comes with a MediaTek Wi-Fi 6 MT7921 card which is incompatible with macOS. So if you need Wi-Fi and Bluetooth, either upgrade your WiFi card or use a compatible USB WiFi dongle.
 
 ## What's Working
 
