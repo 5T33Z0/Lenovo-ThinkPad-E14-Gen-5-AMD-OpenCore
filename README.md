@@ -34,7 +34,7 @@ OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. 
 * [x] USB Port Mapping
 * [x] Brightness and Volume controls via keyboard shortcuts
 * [x] WiFi (via after-market WiFi/BT Card)
-- [x] Slimed Intel Wifi and BT kexts to reduce overall EFI size
+* [x] Slimed Intel Wifi and BT kexts to reduce overall EFI size
 
 > [!NOTE]
 > 
