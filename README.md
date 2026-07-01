@@ -109,6 +109,13 @@ Download, install and run [Heliport App](https://github.com/joshcalvert47/HeliPo
 
 Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to monitor and adjust CPU power management
 
+## Geekbench Scores
+
+Componet | Score (Windows) | Score (macOS) 
+-------- | ----------------|---------------
+**CPU** | [Single-Core](https://browser.geekbench.com/v6/cpu/18552490): 1923 <br> [Multi-Core](https://browser.geekbench.com/v6/cpu/18552490): 5966 |
+**GPU** | [Vulkan](https://browser.geekbench.com/v6/compute/6660369): 12659 <br>[OpenCL](https://browser.geekbench.com/v6/compute/6660375): 14608 
+
 ## Links
 [Lenovo Driver and Software Matrix](https://download.lenovo.com/cdrt/tools/drivermatrix/dm_2.html)
 
