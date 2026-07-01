@@ -113,7 +113,7 @@ Install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/relea
 
 Componet | Score (Windows) | Score (macOS) 
 -------- | ----------------|---------------
-**CPU** | [Single-Core](https://browser.geekbench.com/v6/cpu/18552490): 1923 <br> [Multi-Core](https://browser.geekbench.com/v6/cpu/18552490): 5966 |
+**CPU** | [Single-Core](https://browser.geekbench.com/v6/cpu/18552490): 1923 <br> [Multi-Core](https://browser.geekbench.com/v6/cpu/18552490): 5966 | Single-Core: [1567](https://browser.geekbench.com/v6/cpu/18552388) <br> Multi-Core: [5729](https://browser.geekbench.com/v6/cpu/18552388)
 **GPU** | [Vulkan](https://browser.geekbench.com/v6/compute/6660369): 12659 <br>[OpenCL](https://browser.geekbench.com/v6/compute/6660375): 14608 
 
 ## Links
