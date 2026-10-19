@@ -19,36 +19,33 @@ OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. 
 | **iGPU**    | AMD Radeon RX Vega 8 (4000/5000)
 | **RAM**     | 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
 | **Storage** | 1 TB NVMe (Western Digital PC SN740)
-| **WIFI/BT** | Intel® Wi-Fi 6E [AX210](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*<br> **WiFi Fw**: `iwlwifi-ty-a0-gf-a0-68.ucode` + `iwlwifi-ty-a0-gf-a0.pnvm` <br> **BT Fw**: `ibt-0041-0041.sfi` + `ibt-0041-0041.ddc`
+| **WIFI/BT** | [**Intel® Wi-Fi 6E AX210**](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*<br> **WiFi Fw**: `iwlwifi-ty-a0-gf-a0-68.ucode` + `iwlwifi-ty-a0-gf-a0.pnvm` <br> **BT Fw**: `ibt-0041-0041.sfi` + `ibt-0041-0041.ddc`
+| **Audio** | **CODEC**: Conexant CX8070 <br> **ALC-Layout-ID**: 21
 
 > [!NOTE]
 > 
 > *In stock configuration, this laptop variant comes with a MediaTek Wi-Fi 6 MT7921 card which is incompatible with macOS. So if you need Wi-Fi and Bluetooth, either upgrade your WiFi card or use a compatible USB WiFi dongle.
 
-## What's Working
+## 🚀 What's Working
 
-* [x] AMD CPU Power Management → install [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to adjust CPU behavior
-* [x] AMD Radeon Graphics 2GB (via NootedRed kext)
-* [x] Audio*
-* [x] HDMI Port
-* [x] USB Port Mapping
-* [x] Brightness and Volume controls via keyboard shortcuts
-* [x] WiFi (via after-market WiFi/BT Card)
-* [x] Slimed Intel Wifi and BT kexts to reduce overall EFI size
+- [x] ⚡ AMD CPU power management (use [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases) to monitor and adjust CPU performance)
+- [x] 🎮 AMD Radeon Graphics with 2 GB VRAM (via NootedRed.kext)
+- [x] 🔊 Audio (no root patches required)
+- [x] 🖥️ HDMI output
+- [x] 🔌 USB port mapping
+- [x] ⌨️ Brightness and volume controls via keyboard shortcuts
+- [x] 📶 Wi-Fi and Bluetooth (via aftermarket wireless card)
+- [x] 🪶 Slimmed-down Intel Wi-Fi and Bluetooth kexts to reduce EFI size
 
-> [!NOTE]
-> 
-> When running macOS Tahoe, analog audio does not work out of the box. In this case, install [VoodooHDA-Tahoe](https://github.com/5T33Z0/Lenovo-ThinkPad-E14-Gen-5-AMD-OpenCore/raw/refs/heads/main/Assets/pkg/VoodooHDA-Tahoe.pkg) or apply root patches with [OCLP Mod](https://github.com/laobamac/OCLP-Mod/releases) in Post-Install.
+### ✨ Notable Features
 
-### Notable Features
-
-* Correct CPU name displayed in “About this Mac…”
-* [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) icons by HJebbour
+- [x] 🏷️ Correct CPU name displayed in “About This Mac”
+- [x] 🎨 [GoldenGate Extended](https://github.com/HJebbour/GoldenGateExt-OpenCore-Theme?tab=readme-ov-file) icons by HJebbour
 
 ## What's Not Working
 
-* [ ] Stock WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 → incompatible. Alternative: USB WiFi Dongle ([TL-WN725N](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) with Chris1111’s [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) or ugrade the internal WiFi/BT Card
 * [ ] Biometrics: Goodix fingerprint sensor and Windows Hello facial recognition
+* [ ] Stock WiFi and Bluetooth: MediaTek Wi-Fi 6 MT7921 → incompatible. Alternative: USB WiFi Dongle ([TL-WN725N](https://www.tp-link.com/de/home-networking/adapter/tl-wn725n/)) with Chris1111’s [Wireless USB Big Sur Adapter](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) or ugrade the internal WiFi/BT Card
 
 ## Todos
 
@@ -100,10 +97,6 @@ sudo spctl --master-disable
 > [!IMPORTANT]
 >
 > In macOS Sequoia+, confirm changes in System Settings → Gatekeeper → “Allow apps from Everywhere”
-
-### Install HeliPort App (Intel Wi-Fi only)
-
-Download, install and run [Heliport App](https://github.com/joshcalvert47/HeliPort) to be able to connect to Wi-Fi Access Points.
 
 ### Install AMD Power Gadget
 
