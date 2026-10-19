@@ -8,19 +8,19 @@
 
 ## About
 
-OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Tested with macOS Sequoia and Tahoe.
+OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. Tested with macOS Tahoe.
 
 ## Tech Specs
 
 | Component   | Details | 
-------------- |---------------------------------------------
-| **Variant**   | [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads) |
+--- | ---
+| **Variant** | [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads) |
 | **CPU**     | AMD Ryzen 7 [7730U](https://www.amd.com/de/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html) (8 Cores/16 Threads) 
 | **iGPU**    | AMD Radeon RX Vega 8 (4000/5000)
 | **RAM**     | 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
 | **Storage** | 1 TB NVMe (Western Digital PC SN740)
 | **WIFI/BT** | [**Intel® Wi-Fi 6E AX210**](https://www.intel.de/content/www/de/de/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)*<br> **WiFi Fw**: `iwlwifi-ty-a0-gf-a0-68.ucode` + `iwlwifi-ty-a0-gf-a0.pnvm` <br> **BT Fw**: `ibt-0041-0041.sfi` + `ibt-0041-0041.ddc`
-| **Audio** | **CODEC**: Conexant CX8070 <br> **ALC-Layout-ID**: 21
+| **Audio**   | **CODEC**: Conexant CX8070 <br> **ALC-Layout-ID**: 21
 
 > [!NOTE]
 > 
