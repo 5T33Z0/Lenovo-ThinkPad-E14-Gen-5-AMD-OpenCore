@@ -15,7 +15,7 @@ OpenCore EFI for running macOS on the Lenovo E14 Gen 5 with an AMD Ryzen 7 CPU. 
 | Component   | Details | 
 --- | ---
 | **Variant** | [21JR002WGE](https://pcsupport.lenovo.com/de/de/products/laptops-and-netbooks/thinkpad-edge-laptops/thinkpad-e14-gen-5-type-21jr-21js/downloads) |
-| **CPU**     | AMD Ryzen 7 [7730U](https://www.amd.com/de/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html) (8 Cores/16 Threads) 
+| **CPU**     | AMD Ryzen 7 [7730U](https://www.amd.com/de/products/processors/laptop/ryzen/7000-series/amd-ryzen-7-7730u.html) (8 Cores/16 Threads) <br> **Codename**: Barcelo R  
 | **iGPU**    | AMD Radeon RX Vega 8 (4000/5000)
 | **RAM**     | 16 GB DDR4 SDRAM, PC4-25600, 3200 MHz
 | **Storage** | 1 TB NVMe (Western Digital PC SN740)
