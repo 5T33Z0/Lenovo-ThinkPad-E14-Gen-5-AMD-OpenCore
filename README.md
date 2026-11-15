@@ -118,4 +118,3 @@ Componet | Score (Windows) | Score (macOS)
 * [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla) – binary kernel patches for AMD CPUs
 * ChefKissInc for NootedRed
 * Fabiosun for helpful guidance
-* Chris1111 fpr VoodooHDA-Tahoe
